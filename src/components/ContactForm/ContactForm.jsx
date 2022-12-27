@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from "redux/contacts/operations";
 import { selectContacts } from "redux/contacts/selectors";
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
 
 
 
@@ -19,7 +19,7 @@ export default function ContactForm() {
       const handleSubmit=e=> {
         e.preventDefault();
         const contactEl = {
-          id: nanoid(),
+          // id: nanoid(),
           name: name,
           number: number,
         };
