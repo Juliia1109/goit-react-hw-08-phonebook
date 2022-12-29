@@ -11,4 +11,4 @@ const contactFilter = createSlice({
 });
 
 export const { setFilter } = contactFilter.actions;
-// export const contactFilterReducer = contactFilter.reducer;
+export const contactFilterReducer = contactFilter.reducer;

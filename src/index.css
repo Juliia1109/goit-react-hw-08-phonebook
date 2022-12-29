@@ -43,7 +43,9 @@ body {
   border-width: 5px 5px 5px 5px;
   border-style: solid dashed solid dashed;
   border-color: #9c27b0 #f3e5f5 #9c27b0 #f3e5f5;
-  width: 300px;
+  min-height: calc(80vh - 50px);
+  width: 600px;
+
   flex-direction: column;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
     -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
