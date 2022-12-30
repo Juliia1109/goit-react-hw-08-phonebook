@@ -1,7 +1,6 @@
 .form {
   padding: 15px;
-  background-color: #ddd9ec;
-  border-radius: 3%;
+  background-color: #c09dd6;
 }
 
 .label {
@@ -16,5 +15,4 @@
 
 .btn {
   margin-left: 220px;
-  border-color: blueviolet;
 }

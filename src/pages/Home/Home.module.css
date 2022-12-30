@@ -3,20 +3,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(to right, pink, white 35%, white 65%, pink);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 center;
 }
 
 .title {
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 700;
-  background: radial-gradient(
-    circle at 50% -20.71%,
-    #a3a7ff 0,
-    #7a8ffc 25%,
-    #3c78f2 50%,
-    #0063e8 75%,
-    #0051de 100%
-  );
+  background: linear-gradient(21deg, #dd03e4, #5611ec);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -8,6 +8,7 @@ import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { selectError } from 'redux/contacts/selectors';
 import Loader from './Loader';
+import Navigation from './Navigation';
 
 const HomePage = lazy(() => import('../pages/Home/Home'));
 const RegisterPage = lazy(() => import('../pages/Register/Register'));
@@ -50,16 +51,11 @@ export const App = () => {
             <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
           }
         />
-          <Route 
-          path="*" 
-          element={
-            <RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
-          }
-        />
       </Route>
+      <Route path="*" element={<Navigation to="/" />} />
     </Routes>
   
-  )};
+  )}
     </>
   )
 

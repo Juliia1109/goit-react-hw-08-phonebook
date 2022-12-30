@@ -10,7 +10,7 @@ import { Audio } from  'react-loader-spinner';
     height = "80"
     width = "80"
     radius = "9"
-    color = '#3f51b5'
+    color = '#9a5a9c'
     ariaLabel = 'three-dots-loading'     
     wrapperStyle={{}}
     wrapperClass='three-dots-wrapper'

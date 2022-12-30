@@ -18,7 +18,7 @@ export default function Tasks() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={css.container}>
     <h1 className={css.text}>Phonebook</h1>
     <ContactForm  />
     <h2  className={css.text}>Contacts</h2>
