@@ -8,7 +8,6 @@ import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { selectError } from 'redux/contacts/selectors';
 import Loader from './Loader';
-import Navigation from './Navigation';
 
 const HomePage = lazy(() => import('../pages/Home/Home'));
 const RegisterPage = lazy(() => import('../pages/Register/Register'));
@@ -52,7 +51,12 @@ export const App = () => {
           }
         />
       </Route>
-      <Route path="*" element={<Navigation to="/" />} />
+      <Route 
+          path="*" 
+          element={
+             <PrivateRoute><ContactsPage /></PrivateRoute>
+          }
+        />
     </Routes>
   
   )}
